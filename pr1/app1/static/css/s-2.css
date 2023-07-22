@@ -1,0 +1,11 @@
+.card-iteam{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 15px;
+}
+.btn:hover {
+  background-color: red;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}

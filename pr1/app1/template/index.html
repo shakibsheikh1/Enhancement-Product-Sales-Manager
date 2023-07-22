@@ -1,0 +1,51 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>the form</title>-->
+
+<!--</head>-->
+<!--<body>-->
+<!--<p>Welcome our website...</p>-->
+<!--   {{a}}-->
+<!--{% for i in q %}-->
+<!--{{i.Name}}-->
+<!--{{i.Email}}<br>-->
+<!--{% endfor %}-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+{% for i in q %}
+  <tbody>
+    <tr>
+     <td>{{i.Name}}</td>
+
+
+      <td>
+          {{i.Email}}
+      </td>
+    </tr>
+
+
+  </tbody>
+    {% endfor %}
+</table>
+<!--<a href="{% url  'home' %}">Go to home page</a>-->
+{{q}}
+</body>
+</html>

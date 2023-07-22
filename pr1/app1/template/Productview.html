@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product view</title>
+<style>
+    a{
+    text-decoration: none;
+    }
+    body{
+    background-color: rgb(227, 222, 216);;
+    }
+
+
+</style>
+</head>
+<body>
+<h2 align="center">This is limited times offer and deals...Please hurry ..</h2>
+<br>
+<div class="card" style="width: 18rem;" align="center">
+
+  <img  src="{{v.img.url}}" style= "height :200px; width :200px "><br>
+  <div class="card-body" >
+    <h2 class="card-title">name : {{v.name}}</h2>
+    <p class="card-text">
+des : {{v.des}}<br>
+price : {{v.price}}<br>
+        review : {{v.review}}<br> </p>
+ <button >   <a href="{% url 'Proall' %}" class="btn btn-primary">return a home page </a></button>
+  </div>
+</div>
+<!--img: {{v.img.url}}<br>-->
+</body>
+</html>

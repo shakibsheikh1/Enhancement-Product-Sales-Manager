@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p a{
+        text-decoration: none;
+        }
+        h1{
+       text-align: center;
+        }
+        body{
+        background-color: rgb(227, 222, 216);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>about</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+{% load static %}
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'searchview' %}">Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'Proall' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'addprod' %}">Add-Prod</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'abouts' %}">About</a>
+        </li>
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--            Dropdown-->
+<!--          </a>-->
+<!--          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--            <li><a class="dropdown-item" href="#">Action</a></li>-->
+<!--            <li><a class="dropdown-item" href="#">Another action</a></li>-->
+<!--            <li><hr class="dropdown-divider"></li>-->
+<!--            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+<!--          </ul>-->
+<!--        </li>-->
+
+      </ul>
+      <form class="d-flex" role="search" method="get">
+        <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search">
+        <button  class="btn btn-outline-success"  type="submit">Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+  <img src="{% static 'img/3.webp'  %}" height="270px" class="d-block w-100" alt="why1">
+
+
+<h1>Enhanced Product Sales Manager</h1>
+<h2>About the Online Shopping System:</h2>
+<p>
+    ---> All the users can view various products, if they wish to buy
+    any then they have to register and then login to add that
+    product inside their cart. The users or customers can also
+    read the reviews about a product posted by other users before
+    buying it.
+</p>
+<p>
+---> The users can add how many products he/she wants to their shopping
+cart. Then the users are able to set the quantity of each added
+product inside the cart. Finally, while checkout the users can
+give their address and the mode of payment and place the
+respective order. Then the admin can see the customer details with
+his/her order details and the address where the order should be
+delivered.
+</p>
+<p>
+    --->This web application will be design for the vendors who need to integrate the inventory as well as product and
+    sells in a single a platform. This application is able to manage product, sells as well as inventory.
+</p>
+
+<p><i><b> # reffrence website</b></i> </p>
+<p> --> <a href="www.w3school.com" >www.w3school.com</a></p>
+<p> --> <a href="www.w3templet.com" >www.w3templet.com</a></p>
+<p> --> <a href="www.django.org" >www.django.org</a></p>
+<p> --> <a href="www.tutorialpoint.com" >www.tutorialpoint.com</a></p>
+<p> --> <a href="www.canstockphoto.com" >www.canstockphoto.com</a></p>
+
+
+</body>
+</html>

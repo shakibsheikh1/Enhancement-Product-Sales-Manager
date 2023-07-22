@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>the sign up page </title>
+    <style>
+    body {
+  background-color: rgb(227, 222, 216);
+}
+ form {
+   width: 30%;
+   margin: 60px auto;
+   background: #efefef;
+   padding: 60px 120px 80px 120px;
+   text-align: center;
+   -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+   box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+ }
+ a{
+  text-decoration: none;
+  }
+    </style>
+</head>
+<body>
+ <div>
+          <form method="post" >
+              {% csrf_token %}
+            <h4 >Registration Page</h4>
+
+            <label>
+              <input type="text" class="input" name="Email" placeholder="EMAIL"/>
+                <div class="line-box">
+              <div class="line"></div>
+              </div>
+            </label>
+              <label>
+              <input type="number" class="input" name="number" placeholder="Mobile_No"/>
+                  <div class="line-box">
+              <div class="line"></div>
+              </div>
+            </label>
+
+            <label>
+              <input type="text"  class="input" name="username" placeholder="USERNAME"/>
+              <div class="line-box">
+                <div class="line"></div>
+              </div>
+            </label>
+
+            <label>
+              <input  type="password" class="input"  name="Password"  placeholder="PASSWORD"/>
+              <div class="line-box">
+                <div class="line"></div>
+              </div>
+            </label>
+
+<!--            <label>-->
+<!--              <input  type="password"  class="input"   name="confirm"  placeholder="CONFIRM PASSWORD"/>-->
+<!--              <div class="line-box">-->
+<!--               <div class="line"></div>-->
+<!--              </div>-->
+<!--            </label>-->
+              <button type="submit" value="submit">submit</button>
+
+          </form>
+
+<a href="{% url 'Loginviews' %}">Go to login page..</a>
+      </div>
+
+</body>
+</html>
